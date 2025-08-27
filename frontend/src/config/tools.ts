@@ -147,6 +147,18 @@ export const TOOLS_CONFIG: Record<string, Tool> = {
     twitterImage:
       "https://hexmos.com/freedevtools/images/date-time-converter-twitter.png",
   },
+
+  'gemini-schema-validator': {
+    name: 'Gemini Schema Validator',
+    path: '/freedevtools/t/gemini-schema-validator/',
+    description: 'TODO: Add your tool description here. Make it compelling and SEO-friendly.',
+    category: 'Developer Tools',
+    icon: '🛠️',
+    themeColor: '#3b82f6',
+    canonical: 'https://hexmos.com/freedevtools/t/gemini-schema-validator/',
+    keywords: ['gemini-schema-validator', 'developer tools', 'TODO: add more keywords'],
+    features: ['TODO: Add feature 1', 'TODO: Add feature 2', 'TODO: Add feature 3']
+  }
 };
 
 export function getToolByKey(key: string): Tool | undefined {

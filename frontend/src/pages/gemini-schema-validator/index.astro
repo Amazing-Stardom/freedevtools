@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GeminiSchemaValidator from './_GeminiSchemaValidator';
+import { getToolByKey } from '../../config/tools';
+
+const tool = getToolByKey('gemini-schema-validator');
+---
+
+<BaseLayout 
+  title={`${tool?.name} - TODO: Add subtitle | Free DevTools`}
+  description={tool?.description}
+  canonical={tool?.canonical}
+  themeColor={tool?.themeColor}
+>
+  <GeminiSchemaValidator client:load />
+</BaseLayout>
